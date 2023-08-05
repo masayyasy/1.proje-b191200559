@@ -1,0 +1,378 @@
+:root {
+    --primary: #cfcc10;
+    --bg: #010101;
+}
+
+* {
+    font-family: 'poopins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'poopins', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+}
+
+.navbar {
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    background-image: url(resim/bg1.jpeg);
+    padding: 0.7rem 7%;
+}
+
+.navbar:hover {
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    background-image: url(resim/bg1.jpeg);
+    padding: 0.7rem 7%; 
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color:#fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    font-style: italic;
+}
+
+.navbar .navbar-brand span {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+    color: #521c1c;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--bg);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(resim/bg1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 0.01%, rgba(255, 255, 255, 0) 25%);
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    border-radius: 6px;
+}
+
+.hero .content h2 {
+    font-size: 5em;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+
+.hero .content h2 span {
+    color:  var(--primary);
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+}
+ /* footer */
+.footer {
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    background-image: url(resim/bg1.jpeg);
+    padding: 0.7rem 7%;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.logo a i{
+    font-size: 2em;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.logo a:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.logo a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerbottom {
+    background-color: #000000 ;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p {
+    color: #fff;
+}
+
+.footerbottom p span {
+    color: var(--primary);
+}
+
+/* footer */
+
+/* jumbotron*/
+
+.jumbotron {
+    background-image: url(resim/bg1.jpeg); 
+    background-size: contain;
+}
+
+.jumbocontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.hakkinda-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.hakkinda-logo a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 50px;
+    border-radius: 50%;
+}
+
+.hakkinda-logo a i{
+    font-size: 2em;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.hakkinda-logo a:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.hakkinda-logo a:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.jumboNav{
+    margin: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.jumboNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.jumboNav ul li a{    
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.jumboNav ul li a:hover {
+    opacity: 1;
+}
+
+/* hakkında kişisel bilgileri*/
+
+.kisisel {
+    padding: 3rem 7% 1.4rem;
+    background-image: url(resim/bg3.jpg);
+    background-size: cover;
+}
+
+.kisisel h2 {
+    color: #010101;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.kisisel h2 span {
+    color: var(--primary);
+}
+
+.kisisel .bilgi {
+    display: flex;
+}
+
+.kisisel .bilgi .kisisel-img {
+    flex: 1 1 45rem;
+}
+
+.kisisel .bilgi .kisisel-img img {
+    width: 100%;
+}
+
+.kisisel .bilgi .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.kisisel .bilgi .content h3 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.kisisel .bilgi .content p {
+    color: #000000;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+/* hobilerim */
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-tutor img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-tutor p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: var(--primary);
+}
+
+/* media queries*/
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* handphone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+
