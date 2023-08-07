@@ -47,7 +47,7 @@ if (!isset($_SESSION['username'])) {
             <a class="nav-link" href="Hakkinda.html">Hakkında</a>
             <a class="nav-link" href="sehrim.php">Şehrim</a>
             <a class="nav-link" href="iletisim.html">İletişim</a>
-            <a class="nav-link" onclick="checker()" href="logout.php">log out</a>
+            <a class="nav-link" onclick="checker()" href="logout.php">Çıkıs</a>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@ if (!isset($_SESSION['username'])) {
             <li><a href="Hakkinda.html">Hakkında</a></li>
             <li><a href="sehrim.html">Şehrim</a></li>
             <li><a href="iletisim.html">İletişim</a></li>
-            <li><a onclick="checker()" href="logout.php">Log ut</a></li>
+            <li><a onclick="checker()" href="logout.php">Çıkıs</a></li>
           </ul>
         </div>
         <div class="footerbottom">
@@ -97,7 +97,7 @@ if (!isset($_SESSION['username'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script>
       function checker() {
-        var result = confirm('Cıkmak istiyor musun?');
+        var result = confirm('Cıkış yapmak istiyor musun?');
         if (result == false){
           event.preventDefault();
         }
