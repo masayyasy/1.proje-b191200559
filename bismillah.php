@@ -63,7 +63,6 @@ if (!isset($_SESSION['username'])) {
       <main class="content">
         <h2>Muhammad Salman <span>Abdullah Ayyasy</span></h2>
         <p>Websitesi'ye Hoş Geldiniz</p>
-        <a href="#" class="cta">gonder</a>
       </main>
       </section>
 

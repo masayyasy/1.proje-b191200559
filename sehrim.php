@@ -31,7 +31,7 @@ $veri = json_decode($content, true);
     <!-- kapak -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">Muhammad<span>Salman</span>.</a>
+        <a class="navbar-brand" href="bismillah.php">Muhammad<span>Salman</span>.</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,6 +50,11 @@ $veri = json_decode($content, true);
 
     <!-- carousel -->
       <div class="container-fluid pt-1 pb-5" id="Hobilerim" style="background-image: url(resim/bg1.jpeg); background-size: contain;">
+      <div class="row text-center">
+          <div class="col" style="background-image: url(resim/kapak.png)">
+            <h2 style="color: #010101; text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5); font-size: 2.6rem; font-weight: bold;">MEMLEKETİM</h2>
+          </div>
+        </div>
         <div class="container text-center">
         <div id="carouselExampleCaptions" class="carousel slide mt-5">
           <div class="carousel-indicators">
