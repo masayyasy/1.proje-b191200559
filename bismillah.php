@@ -47,7 +47,7 @@ if (!isset($_SESSION['username'])) {
             <a class="nav-link" href="Hakkinda.html">Hakkında</a>
             <a class="nav-link" href="sehrim.php">Şehrim</a>
             <a class="nav-link" href="iletisim.html">İletişim</a>
-            <a class="nav-link" href="logout.php">log out</a>
+            <a class="nav-link" onclick="checker()" href="logout.php">log out</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@ if (!isset($_SESSION['username'])) {
           <a href="Hakkinda.html" id="Hakkinda"><i data-feather="user"></i></a>
           <a href="sehrim.html" id="sehrim"><i data-feather="flag"></i></a>
           <a href="iletisim.html" id="iletisim"><i data-feather="send"></i></a>
-          <a href="logout.php" id="logout"><i data-feather="log-out"></i></a>
+          <a onclick="checker()" href="logout.php" id="logout"><i data-feather="log-out"></i></a>
         </div>
         <div class="footerNav">
           <ul>
@@ -82,7 +82,7 @@ if (!isset($_SESSION['username'])) {
             <li><a href="Hakkinda.html">Hakkında</a></li>
             <li><a href="sehrim.html">Şehrim</a></li>
             <li><a href="iletisim.html">İletişim</a></li>
-            <li><a href="logout.php">Log ut</a></li>
+            <li><a onclick="checker()" href="logout.php">Log ut</a></li>
           </ul>
         </div>
         <div class="footerbottom">
@@ -95,5 +95,13 @@ if (!isset($_SESSION['username'])) {
       feather.replace()
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+      function checker() {
+        var result = confirm('Cıkmak istiyor musun?');
+        if (result == false){
+          event.preventDefault();
+        }
+      }
+    </script>
   </body>
 </html>
